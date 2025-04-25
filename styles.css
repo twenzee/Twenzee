@@ -1,0 +1,355 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Main Background */
+body {
+    background-color: #1f1f1f;
+    color: #ffcc66; /* Light orange font color */
+    line-height: 1.6;
+    font-size: 16px; /* Base font size */
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+}
+
+.navbar .logo {
+    font-size: 2.5rem; /* Adjusted logo size */
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links li a {
+    font-size: 1.5rem; /* Adjusted font size for links */
+    color: #ffcc66; /* Light orange text */
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff8c00;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+#langSelect {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.icons a {
+    margin-left: 10px;
+}
+
+.icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 150px 20px 100px;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 5rem; /* Adjusted size */
+    font-weight: bold;
+    color: #ffcc66; /* Light orange font color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.8rem; /* Adjusted font size */
+    margin: 20px 0;
+    color: #ffcc66; /* Light orange font color */
+}
+
+.cta-btn {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5rem; /* Adjusted font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e07b00;
+}
+
+/* Product Section */
+.product-section {
+    padding: 60px 50px;
+    background-color: #222;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc66; /* Light orange font color */
+}
+
+.product-toolbar {
+    margin-bottom: 30px;
+}
+
+.product-toolbar button {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.product-toolbar button:hover {
+    background-color: #e07b00;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card .discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff8c00;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #ffcc66; /* Light orange font color */
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #ff8c00;
+}
+
+.product-card .rating {
+    margin-top: 10px;
+    color: #f1c40f;
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 50px;
+    background-color: #111;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc66; /* Light orange font color */
+}
+
+.about-section p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #ffcc66; /* Light orange font color */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 50px;
+    background-color: #222;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc66; /* Light orange font color */
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section form button:hover {
+    background-color: #e07b00;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #ffcc66; /* Light orange font color */
+}
+
+.contact-info a {
+    color: #ff8c00;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: #ffcc66; /* Light orange font color */
+}
+
+.socials a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.socials a:hover {
+    color: #ff8c00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo {
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .contact-section form input,
+    .contact-section form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-section form button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}

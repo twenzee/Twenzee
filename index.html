@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TWENZEE - A clothing brand offering oversized tees with a modern twist. Shop now!" />
+  <title>TWENZEE - Clothing Brand</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">TWENZEE</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <select id="langSelect" aria-label="Language Selection">
+        <option value="en">EN</option>
+        <option value="ur">UR</option>
+        <option value="hi">HI</option>
+        <option value="cn">中文</option>
+      </select>
+      <a href="#" aria-label="Search"><img src="search-icon.svg" alt="Search" /></a>
+      <a href="#" aria-label="Cart"><img src="cart-icon.svg" alt="Cart" /></a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Style That Speaks</h1>
+    <p>Oversized Tees & Modern Vibes</p>
+    <a class="cta-btn" href="#shop">Shop Now</a>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="product-section">
+    <h2>Oversized T-Shirts</h2>
+    <div class="product-toolbar">
+      <button id="filterSortBtn" aria-label="Filter and Sort Products">Filter and Sort</button>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <span class="discount">Save 15%</span>
+        <img src="product1.jpg" alt="Champion Tee" class="product-img" />
+        <h3>Champion Tee</h3>
+        <p>$25.00</p>
+        <span class="rating">4.5★</span>
+      </div>
+
+      <!-- New Product -->
+      <div class="product-card">
+        <span class="discount">New Arrival</span>
+        <img src="Picsart_25-04-24_17-28-08-880.jpg" alt="Streetwear Tee" class="product-img" />
+        <h3>Streetwear Tee</h3>
+        <p>₨1500</p>
+        <span class="rating">4.8★</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About TWENZEE</h2>
+    <p>We blend fashion and culture with high-quality oversized fits. At TWENZEE, we create pieces that not only reflect style but also make a statement.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="#">
+      <input type="text" placeholder="Your Name" required aria-label="Enter your name" />
+      <input type="email" placeholder="Your Email" required aria-label="Enter your email" />
+      <textarea placeholder="Message" required aria-label="Enter your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:twenzeee@gmail.com">twenzeee@gmail.com</a> / <a href="mailto:ghufranmughal258@gmail.com">ghufranmughal258@gmail.com</a></p>
+      <p>Phone: <a href="tel:+923257043179">0325 7043179</a> / <a href="tel:+923132498922">0313 2498922</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TWENZEE. All rights reserved.</p>
+    <div class="socials">
+      <a href="#" aria-label="Instagram">Instagram</a> |
+      <a href="#" aria-label="Facebook">Facebook</a> |
+      <a href="#" aria-label="Twitter">Twitter</a>
+    </div>
+  </footer>
+</body>
+</html>
